@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS Day 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="favicon.ico">
+        <link href="style.css" rel="stylesheet">
+        <script defer src="script.js"></script>
+    </head>
+    <body>
+        <section>
+            <div class="section-content">
+                <h1>JavaScript Day 2</h1>
+                <div class="button-wrapper">
+                    <button class="next-button" type="">Get Started</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>History</h2>
+                <ul>
+                    <li>JS</li>
+                    <li>ECMAScript</li>
+                    <li>Node</li>
+                </ul>
+                <button class="next-button" type="">Next</button>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>The DOM</h2>
+                <ul>
+                    <li>The document object</li>
+                    <li id="example-id" class="dom-li">Selecting elements</li>
+                    <li id="example-id-2" class="dom-li">Manipulating elements</li>
+                    <li id="example-id-3" class="dom-li">Adding listeners</li>
+                </ul>       
+                <button class="next-button" type="">Next</button>         
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>The BOM</h2>
+                <ul>
+                    <li>The window object</li>
+                    <li>The navigator object</li>
+                </ul>
+                <button class="next-button" type="">Next</button>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>Debugging</h2>
+                <ul>
+                    <li>Breakpoints</li>
+                    <li>Debugger</li>
+                    <li>Watch</li>
+                    <li>Stepping</li>
+                </ul>
+                <button class="next-button" type="">Next</button>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>Array Basics</h2>
+                <ul>
+                    <li>Purpose</li>
+                    <li>Array Literals</li>
+                    <li>Accessing Elements</li>
+                </ul>
+                <button class="next-button" type="">Next</button>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>Array Prototype Methods</h2>
+                <ul>
+                    <li>Stack Methods</li>
+                    <li>Slicing and Splicing</li>
+                    <li>Concatenating</li>
+                    <li>Mapping and Reducing</li>
+                </ul>
+                <button class="next-button" type="">Next</button>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>The Array Object</h2>
+                <ul>
+                    <li>new Array()</li>
+                    <li>new Array() vs. {}</li>
+                </ul>
+                <button class="next-button" type="">Next</button>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>Array Practice</h2>
+                <p>Create an array of songs for an album called 'songs.'</p>
+                <p>Then alter the songs with array prototype methods.</p>
+                <div class="button-wrapper">
+                    <textarea id="song-input" placeholder="Type your code here" rows=4></textarea>
+                </div>
+                <div class="button-wrapper">  
+                    <button id="add-songs">Create Songs</button>
+                </div>
+                <p>Your Songs</p>
+                <div class="album">
+                    <div class="image">
+                        <img src="https://image-ticketfly.imgix.net/00/00/59/36/17-og.jpg?w=300&h=234" alt="">
+                    </div>
+                    <ul id="song-list"></ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>Object Basics</h2>
+                <ul>
+                    <li>Purpose</li>
+                    <li>Object Literals</li>
+                    <li>Key/Value Pairs</li>
+                    <li>Accessing Properties</li>
+                </ul>
+                <button class="next-button" type="">Next</button>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>Properties and Methods</h2>
+                <pre>
+                var obj = {
+                    property: value,
+                    property: value,
+                    property: value,
+                    method: function(){
+                        // Code here
+                    }
+                };
+                </pre>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>Prototype Methods</h2>
+                <ul>
+                    <li>.hasOwnProperty()</li>
+                    <li>.assign()</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>Object Practice</h2>
+                <p>Create an object called 'profile.'</p>
+                <p>Then alter the profile and see the changes.</p>
+                <div class="button-wrapper">
+                    <textarea id="profile-input" placeholder="Type your code here" rows=4></textarea>
+                </div>
+                <div class="button-wrapper">  
+                    <button id="add-profile">Create Profile</button>
+                </div>
+                <p>Your Profile</p>
+                <div class="profile">
+                    <div class="image">
+                        <img src="http://cdn.onlinewebfonts.com/svg/img_415759.svg" alt="">
+                    </div>
+                    <ul id="profile-list"></ul>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>Prototypes</h2>
+                <pre>
+                Array.prototype.myFunction = {
+                    // Add code here
+                };
+
+                Object.prototype.myCustomFunction = {
+                    // This is risky business
+                    // Technically, it's called monkey-patching.
+                }
+                </pre>
+            </div>
+        </section>
+        <section>
+            <div class="section-content">
+                <h2>Loops, Arrays, and Objects</h2>
+                <ul>
+                    <li>standard loops</li>
+                    <li>for in loops</li>
+                    <li>for of loops</li>
+                </ul>
+            </div>
+        </section>
+    </body>
+</html>

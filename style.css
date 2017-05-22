@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --base-color: #F2EDD5;
+    --accent-one: #059AF7;
+    --accent-two: #F27405;
+    --accent-one-dark: #023561;
+    --accent-two-dark: #BF4124;
+    --accent-three: #8C1B9C;
+    --heading-font: 'Noto Sans';
+    --text-font: 'Slabo 27px'; 
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--text-font), serif;
+    font-size: 2em;
+    color: var(--base-color);
+}
+
+button, textarea {
+    margin-top: 5vh;
+    width: 30vw;
+    height: 8vh;
+    border: none;
+    background: var(--base-color);
+    font-size: 1em;
+}
+
+textarea {
+    width: 80vw;
+    font-size: .5em;
+}
+
+
+section:nth-child(4n + 1) {
+    background: var(--accent-one) 
+}
+
+section:nth-child(4n + 1) button {
+    color: var(--accent-one) 
+}
+
+section:nth-child(4n + 2) {
+    background: var(--accent-two)
+}
+
+section:nth-child(4n + 2) button {
+    color: var(--accent-two)
+}
+
+section:nth-child(4n + 3) {
+    background: var(--accent-one-dark) 
+}
+
+section:nth-child(4n + 3) button {
+    color: var(--accent-one-dark) 
+}
+
+section:nth-child(4n + 4) {
+    background: var(--accent-two-dark)
+}
+
+section:nth-child(4n + 4) button {
+    color: var(--accent-two-dark)
+}
+
+.section-content h1, h2, .button-wrapper {
+    font-family: var(--heading-font), sans-serif;
+    text-align: center;
+}
+
+.image {
+    width: 40%;
+    height: 30vh;
+    float: left;
+    text-align: right;
+}
+
+.image img {
+    height: 30vh;
+    width: auto;
+}
+
+#song-list {
+    float: left;
+    width: 30%;
+    height: 30vh;
+    padding-left: 1em;
+    list-style-type: none;
+    background: var(--base-color);
+    font-size: .5em;
+    color: #222;
+}
+
+pre {
+    margin-left: -3em;
+}
+
